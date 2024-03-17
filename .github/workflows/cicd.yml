@@ -52,7 +52,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.kkgo }}
           logout: true
       
       - name: Push to GitHub Container Registry
@@ -93,4 +93,3 @@ jobs:
   #         github_token: ${{ secrets.PAT }}
   #         repository: aorjoa-training/devops-argocd
   #         branch: main
-  

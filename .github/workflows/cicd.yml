@@ -53,11 +53,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          permission: write-all
           logout: true
-      # - name: 'Login to GitHub Container Registry'
-      #   run: |
-      #     echo $CR_PAT | docker login ghcr.io -u hanqqv --password-stdin
       
       - name: Push to GitHub Container Registry
         uses: docker/build-push-action@v2
